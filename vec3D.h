@@ -33,8 +33,9 @@ class Vec3d {
 		friend Vec3d operator -(const Vec3d& v1, const Vec3d& v2);
 		friend Vec3d operator *(const Vec3d& vec, double m);		
 		friend Vec3d operator *(double n, const Vec3d& vec);		
-        friend double dot(Vec3d& a, Vec3d& b);
-        friend double dist(Vec3d& a, Vec3d& b);
+        	friend double dot(Vec3d& a, Vec3d& b);
+        	friend double dist(Vec3d& a, Vec3d& b);
+		//get_Normal
 		friend Vec3d get_Normal(const Vec3d& p1, const Vec3d& p2, const Vec3d& p3 ){  
 			double a = ( (p2.y-p1.y)*(p3.z-p1.z)-(p2.z-p1.z)*(p3.y-p1.y) );  
 			double b = ( (p2.z-p1.z)*(p3.x-p1.x)-(p2.x-p1.x)*(p3.z-p1.z) );  
